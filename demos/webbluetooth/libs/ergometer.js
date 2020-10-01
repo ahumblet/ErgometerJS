@@ -1012,10 +1012,12 @@ var ergometer;
                 return new Promise(function (resolve, reject) {
                     try {
                         navigator.bluetooth.requestDevice({
-                            filters: [
-                                { services: _this._scanServices
-                                }
-                            ],
+                            /* AH: raspberry pi is no recognized when we filter by PMDEVICE service. Not sure why!*/
+                            acceptAllDevices: true,
+                            // filters: [
+                            //     { services: _this._scanServices
+                            //     }
+                            // ],
                             optionalServices: _this._scanOptionalServices
                         }).then(function (device) {
                             foundFn({
