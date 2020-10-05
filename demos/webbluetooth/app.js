@@ -40,7 +40,7 @@ var Demo = /** @class */ (function () {
         $("#info").text(info);
     };
     Demo.prototype.showData = function (data) {
-        $("#data").text($("#data").text() + data);
+        $("#data").text($("#data").text() + data + '\n');
         console.debug(data);
     };
     Demo.prototype.initialize = function () {
