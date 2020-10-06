@@ -49,20 +49,20 @@ var Demo = /** @class */ (function () {
         //this.performanceMonitor.multiplex=true; //needed for some older android devices which limited device capablity. This must be set before ting
         //this.performanceMonitor.logLevel=ergometer.LogLevel.trace; //by default it is error, for more debug info  change the level
         this.performanceMonitor.logEvent.sub(this, this.onLog);
-        this.performanceMonitor.connectionStateChangedEvent.sub(this, this.onConnectionStateChanged);
+        // this.performanceMonitor.connectionStateChangedEvent.sub(this, this.onConnectionStateChanged);
         //connect to the rowing
         this.performanceMonitor.rowingGeneralStatusEvent.sub(this, this.onRowingGeneralStatus);
-        this.performanceMonitor.rowingAdditionalStatus1Event.sub(this, this.onRowingAdditionalStatus1);
+        // this.performanceMonitor.rowingAdditionalStatus1Event.sub(this, this.onRowingAdditionalStatus1);
         this.performanceMonitor.rowingAdditionalStatus2Event.sub(this, this.onRowingAdditionalStatus2);
-        this.performanceMonitor.rowingStrokeDataEvent.sub(this, this.onRowingStrokeData);
-        this.performanceMonitor.rowingAdditionalStrokeDataEvent.sub(this, this.onRowingAdditionalStrokeData);
-        this.performanceMonitor.rowingSplitIntervalDataEvent.sub(this, this.onRowingSplitIntervalData);
-        this.performanceMonitor.rowingAdditionalSplitIntervalDataEvent.sub(this, this.onRowingAdditionalSplitIntervalData);
-        this.performanceMonitor.workoutSummaryDataEvent.sub(this, this.onWorkoutSummaryData);
-        this.performanceMonitor.additionalWorkoutSummaryDataEvent.sub(this, this.onAdditionalWorkoutSummaryData);
-        this.performanceMonitor.heartRateBeltInformationEvent.sub(this, this.onHeartRateBeltInformation);
-        this.performanceMonitor.additionalWorkoutSummaryData2Event.sub(this, this.onAdditionalWorkoutSummaryData2);
-        this.performanceMonitor.powerCurveEvent.sub(this, this.onPowerCurve);
+        // this.performanceMonitor.rowingStrokeDataEvent.sub(this, this.onRowingStrokeData);
+        // this.performanceMonitor.rowingAdditionalStrokeDataEvent.sub(this, this.onRowingAdditionalStrokeData);
+        // this.performanceMonitor.rowingSplitIntervalDataEvent.sub(this, this.onRowingSplitIntervalData);
+        // this.performanceMonitor.rowingAdditionalSplitIntervalDataEvent.sub(this, this.onRowingAdditionalSplitIntervalData);
+        // this.performanceMonitor.workoutSummaryDataEvent.sub(this, this.onWorkoutSummaryData);
+        // this.performanceMonitor.additionalWorkoutSummaryDataEvent.sub(this, this.onAdditionalWorkoutSummaryData);
+        // this.performanceMonitor.heartRateBeltInformationEvent.sub(this, this.onHeartRateBeltInformation);
+        // this.performanceMonitor.additionalWorkoutSummaryData2Event.sub(this, this.onAdditionalWorkoutSummaryData2);
+        // this.performanceMonitor.powerCurveEvent.sub(this, this.onPowerCurve);
         $("#StartScan").click(function () {
             _this.startScan();
         });
