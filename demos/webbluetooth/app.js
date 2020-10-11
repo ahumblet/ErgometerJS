@@ -52,7 +52,7 @@ var Demo = /** @class */ (function () {
         // this.performanceMonitor.connectionStateChangedEvent.sub(this, this.onConnectionStateChanged);
         //connect to the rowing
         this.performanceMonitor.rowingGeneralStatusEvent.sub(this, this.onRowingGeneralStatus);
-        // this.performanceMonitor.rowingAdditionalStatus1Event.sub(this, this.onRowingAdditionalStatus1);
+        this.performanceMonitor.rowingAdditionalStatus1Event.sub(this, this.onRowingAdditionalStatus1);
         this.performanceMonitor.rowingAdditionalStatus2Event.sub(this, this.onRowingAdditionalStatus2);
         // this.performanceMonitor.rowingStrokeDataEvent.sub(this, this.onRowingStrokeData);
         // this.performanceMonitor.rowingAdditionalStrokeDataEvent.sub(this, this.onRowingAdditionalStrokeData);
